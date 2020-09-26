@@ -29,4 +29,3 @@ void DisplayBoard(vector< vector<string> > vec)
             cout<<endl;
     }
 }
-
