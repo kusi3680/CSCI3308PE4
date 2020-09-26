@@ -11,6 +11,7 @@ The code uses a class to start the game.
 Start the game using by going on the terminal with the file and running:
 
 g++ -g -Wall TicTacToe.cpp -o executable 
+
 ./executable
 
 The class has one private variable:
