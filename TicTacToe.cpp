@@ -26,6 +26,54 @@ public:
 		cin >> position; 
 		return position; 
 	}
+	void PlaceMarker(int position, string mark) {
+		switch (position) {
+			case 1:
+		 		board_[0][0] = mark; 
+		 		break; 
+		
+
+			case 2:
+				board_[0][1] = mark; 
+				break; 
+		
+			case 3:
+				board_[0][2] = mark; 
+				break; 
+		
+
+			case 4:
+				board_[1][0] = mark;
+				break; 
+		
+
+			case 5:
+				board_[1][1] = mark;
+				return; 
+		
+
+			case 6:
+				board_[1][2] = mark;
+				return; 
+		
+
+			case 7:
+				board_[2][0] = mark;
+				return; 
+		
+
+			case 8:
+				board_[2][1] = mark;
+				return; 
+		
+
+			case 9:
+				board_[2][2] = mark;
+				return; 
+				}		
+
+	}
+
     private: 
 	string board_[3][3];
 };
