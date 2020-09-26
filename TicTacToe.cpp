@@ -83,13 +83,18 @@ int main() {
 
 	TicTacToe game; 
 	game.DisplayBoard();
+	int p = 0;  
 	 
-	for (int i=0;i<9;i=i+2){
-		int pos = 0;  
-		cout << "Player 1:" << endl; 
+	for (int i=0;i<9;i++){
+		cout << "Player 1:" << endl;
+		p = game.GetPlayerChoice();
+		game.PlaceMarker(p, "X"); 
 		game.DisplayBoard(); 
-		pos = 0; 
-		cout << "Player 2:" << endl; 
+		i++;
+		if(i==9) break;
+		cout << "Player 2:" << endl;
+		p = game.GetPlayerChoice();
+		game.PlaceMarker(p, "O");
 		game.DisplayBoard();  
 	}
 
