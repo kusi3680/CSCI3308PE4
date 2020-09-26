@@ -20,6 +20,12 @@ public:
 		}
 		cout << endl; 
 	}
+	int GetPlayerChoice() {
+		cout << "Enter a position: "; 
+		int position; 
+		cin >> position; 
+		return position; 
+	}
     private: 
 	string board_[3][3];
 };
