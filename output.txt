@@ -1,0 +1,62 @@
+kunal@csci3308-VirtualBox:~$ cd Desktop/CSCIPE4/
+kunal@csci3308-VirtualBox:~/Desktop/CSCIPE4$ g++ -g -Wall TicTacToe.cpp -o executable
+kunal@csci3308-VirtualBox:~/Desktop/CSCIPE4$ ./executable
+___
+___
+___
+
+Player 1:
+Enter a position: 1
+X__
+___
+___
+
+Player 2:
+Enter a position: 2
+XO_
+___
+___
+
+Player 1:
+Enter a position: 3
+XOX
+___
+___
+
+Player 2:
+Enter a position: 4
+XOX
+O__
+___
+
+Player 1:
+Enter a position: 5
+XOX
+OX_
+___
+
+Player 2:
+Enter a position: 6
+XOX
+OXO
+___
+
+Player 1:
+Enter a position: 7
+XOX
+OXO
+X__
+
+Player 2:
+Enter a position: 8
+XOX
+OXO
+XO_
+
+Player 1:
+Enter a position: 9
+XOX
+OXO
+XOX
+
+kunal@csci3308-VirtualBox:~/Desktop/CSCIPE4$ 
