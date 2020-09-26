@@ -1,27 +1,30 @@
 using namespace std;
+# include <iostream>
+#include <vector>
+#include <string>
 
-int * CreateBoard ();
-{
-    static int arr[3][3];
+
+vector< vector<string> > CreateBoard (){
+    vector< vector<string> > vec;
     
     for (int i = 0; i<3 ; i++)
     {
         for(int j = 0; j<3;j++)
         {
-            arr[i][j] = -1;
+            vec[i][j] = " ";
         }
     }
-    
-    return arr;
+    return vec;
 }
 
-void DisplayBoard(vector< vector<string> > board)
+void DisplayBoard(vector< vector<string> > vec)
 {
-        for (int j = 0; j<3 ; j++)
+        for (int i = 0; i<3 ; i++)
     {
-        for(int i = 0; i<3;i++)
+            cout<<"|";
+        for(int j = 0; j<3;j++)
         {
-            cout<< board[j][i]<<" ";
+            cout<< vec[i][j]<<"|";
         }
             cout<<endl;
     }
