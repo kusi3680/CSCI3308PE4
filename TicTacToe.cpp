@@ -1,31 +1,43 @@
-using namespace std;
-# include <iostream>
-#include <vector>
-#include <string>
+#include <iostream>
+using namespace std; 
+
+class TicTacToe {
+public:
+	TicTacToe() { CreateBoard(); }
+	void CreateBoard() {
+		for(int i = 0; i < 3; i++) {
+			for(int j = 0; j < 3; j++) {
+				board_[i][j] = '_'; 
+			}
+		}
+	}
+	void DisplayBoard() {
+		for(int i = 0; i < 3; i++) {
+			for(int j = 0; j < 3; j++) {
+				cout << board_[i][j]; 
+			}
+			cout << endl; 
+		}
+		cout << endl; 
+	}
+    private: 
+	string board_[3][3];
+};
 
 
-vector< vector<string> > CreateBoard (){
-    vector< vector<string> > vec;
-    
-    for (int i = 0; i<3 ; i++)
-    {
-        for(int j = 0; j<3;j++)
-        {
-            vec[i][j] = " ";
-        }
-    }
-    return vec;
-}
+int main() {
 
-void DisplayBoard(vector< vector<string> > vec)
-{
-        for (int i = 0; i<3 ; i++)
-    {
-            cout<<"|";
-        for(int j = 0; j<3;j++)
-        {
-            cout<< vec[i][j]<<"|";
-        }
-            cout<<endl;
-    }
-}
+	TicTacToe game; 
+	game.DisplayBoard();
+	 
+	for (int i=0;i<9;i=i+2){
+		int pos = 0;  
+		cout << "Player 1:" << endl; 
+		game.DisplayBoard(); 
+		pos = 0; 
+		cout << "Player 2:" << endl; 
+		game.DisplayBoard();  
+	}
+
+	return 0; 
+}	
